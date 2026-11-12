@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Me Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>AI Me Vendor Checker</h1>
+    <p><strong>Know what your AI is doing.</strong></p>
+  </header>
+
+  <main>
+    <section>
+      <p><a href="index.html">← Back to vendor selection</a></p>
+
+      <h2 id="assessment-title">Vendor Assessment</h2>
+      <section id="vendor-quick-check">
+  <h3>KNOW: Your technology provider</h3>
+  <p>Understand what the available evidence tells us about this technology, what still needs clarification, and where your organisation may need to act.</p>
+  <div id="vendor-quick-check-content"></div>
+</section>
+      <p class="evidence-date"><strong>Evidence reviewed:</strong> October 2026</p>
+      <p class="evidence-note">Vendor products, features, terms and policies can change. AI Me findings are based on evidence reviewed at the date shown.</p>
+      <p id="other-vendor-notice" style="display: none;"><strong>Vendor evidence not yet available.</strong> AI Me has not reviewed this technology provider. You can still complete the organisation assessment, but vendor-specific findings cannot be provided.</p>
+
+      <p>
+        Before AI Me shows findings, we need to understand how your
+        organisation is using the technology.
+      </p>
+
+      <div class="assessment-data-notice">
+  <h3>About your assessment data</h3>
+  <p>AI Me does not require information about individual children or players. Please answer questions about your organisation's practices rather than individual participants.</p>
+  <p>Your assessment responses are processed in your browser and are not stored by AI Me.</p>
+</div>
+
+<section class="assessment-disclaimer">
+  <h3>Important information about this assessment</h3>
+  <p><strong>AI Me V1 is a learning prototype developed by Little Voices Advisory.</strong></p>
+  <p>This assessment provides general information to help organisations identify potential governance gaps and practical next steps when using AI-enabled filming in children's sport.</p>
+  <p>Results are based on your organisation's answers and vendor evidence reviewed at the dates shown. AI Me does not independently verify your answers or continuously monitor vendor changes.</p>
+  <p>AI Me does not provide legal advice, certify legal compliance or guarantee that a technology or practice is safe. Your organisation remains responsible for its decisions, privacy practices and safeguarding arrangements.</p>
+</section>
+
+<div class="assessment-scope">
+  <h3>About this assessment</h3>
+  <p>This assessment is about your organisation's use of the selected technology involving participants under 18. Please answer based on your under-18 activities, even if your organisation uses the technology differently with adults.</p>
+  <p>The same technology can create different governance issues depending on which features are enabled and how they are actually used.</p>
+</div>
+
+     
+
+      <div id="assessment-questions">
+
+  <div class="assessment-question">
+    <h3>1. Which parts of this technology does your organisation use for activities involving participants under 18?</h3>
+
+    <p>
+      Select everything you know is currently used. If you are unsure, that is okay.
+      AI Me will treat uncertainty as something to establish, not as a yes or no.
+    </p>
+
+    <label>
+      <input type="checkbox" name="technology-use" value="recording">
+      Recording matches, games or activities
+    </label>
+
+    <label>
+      <input type="checkbox" name="technology-use" value="livestreaming">
+      Livestreaming
+    </label>
+
+    <label>
+      <input type="checkbox" name="technology-use" value="analytics">
+      Player or team analytics
+    </label>
+
+    <label>
+      <input type="checkbox" name="technology-use" value="sharing">
+      Sharing footage with other teams, leagues or organisations
+    </label>
+
+    <label>
+      <input type="checkbox" name="technology-use" value="downloads">
+      Downloading or exporting footage or clips
+    </label>
+
+    <label>
+      <input type="checkbox" name="technology-use" value="unsure">
+      I'm not sure
+    </label>
+
+  </div>
+
+  <div class="assessment-question">
+  <h3>2. Who may be recorded or analysed when your organisation uses this technology?</h3>
+
+  <p>
+    Select everyone who may be captured, even if they do not have an account or use the technology themselves.
+  </p>
+
+  <label>
+    <input type="checkbox" name="people-recorded" value="club-children">
+    Children who play for our organisation
+  </label>
+
+  <label>
+    <input type="checkbox" name="people-recorded" value="external-children">
+    Children who play for another club or team
+  </label>
+
+  <label>
+    <input type="checkbox" name="people-recorded" value="adults">
+    Coaches, officials or other adults
+  </label>
+
+  <label>
+    <input type="checkbox" name="people-recorded" value="bystanders">
+    Spectators, siblings or other people near the activity
+  </label>
+
+  <label>
+    <input type="checkbox" name="people-recorded" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+<div class="assessment-question">
+  <h3>3. What happens if a child or parent does not agree to the child being recorded?</h3>
+
+  <p>
+    Select the option that best describes what currently happens in your organisation.
+  </p>
+
+  <label>
+    <input type="radio" name="recording-refusal" value="not-recorded">
+    The game or activity is not recorded
+  </label>
+
+  <label>
+    <input type="radio" name="recording-refusal" value="technical-controls">
+    We use technical or access controls to manage the situation
+  </label>
+
+  <label>
+    <input type="radio" name="recording-refusal" value="participation-restricted">
+    The child's participation is restricted or changed
+  </label>
+
+  <label>
+    <input type="radio" name="recording-refusal" value="cannot-participate">
+    The child cannot participate
+  </label>
+
+  <label>
+    <input type="radio" name="recording-refusal" value="no-procedure">
+    We do not have a procedure for this
+  </label>
+
+  <label>
+    <input type="radio" name="recording-refusal" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+<div id="technical-controls-followup" class="assessment-question" style="display: none;">
+  <h3>3A. Which controls does your organisation currently use?</h3>
+
+  <p>
+    Select everything that currently applies. Do not select a control unless you know it is being used.
+  </p>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="face-blurring">
+    Face blurring or de-identification
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="restricted-access">
+    Footage is restricted to authorised people such as the coach or manager
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="no-app-release">
+    Footage is not released to players or families through the app
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="downloads-restricted">
+    Downloading or exporting footage is disabled or restricted
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="sharing-restricted">
+    Sharing or onward distribution is disabled or restricted
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="deletion">
+    Footage is deleted after its approved use
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="deletion-evidence">
+    We keep deletion evidence
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="other">
+    We use another control
+  </label>
+
+  <label>
+    <input type="checkbox" name="refusal-controls" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+<div id="original-capture-followup" class="assessment-question" style="display: none;">
+  <h3>3B. When these controls are used, is the child still captured in the original recording?</h3>
+
+  <p>
+    We are asking about the original footage before any blurring, access restrictions or deletion takes place.
+  </p>
+
+  <label>
+    <input type="radio" name="original-capture" value="yes">
+    Yes
+  </label>
+
+  <label>
+    <input type="radio" name="original-capture" value="no">
+    No
+  </label>
+
+  <label>
+    <input type="radio" name="original-capture" value="depends">
+    It depends on the control or situation
+  </label>
+
+  <label>
+    <input type="radio" name="original-capture" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+<div class="assessment-question">
+  <h3>4. Does your organisation keep a current record of each child's filming and data permissions?</h3>
+
+  <p>
+    This means a record that lets your organisation identify what each child or parent has agreed to, declined or later changed.
+  </p>
+
+  <label>
+    <input type="radio" name="consent-record" value="yes">
+    Yes
+  </label>
+
+  <label>
+    <input type="radio" name="consent-record" value="general-only">
+    We have consent records, but they do not record individual filming or data choices
+  </label>
+
+  <label>
+    <input type="radio" name="consent-record" value="no">
+    No
+  </label>
+
+  <label>
+    <input type="radio" name="consent-record" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+
+
+<div class="assessment-question">
+  <h3>5. Does your organisation keep a record of deletion requests and the actions taken?</h3>
+
+  <p>
+    This includes recording who the request relates to, what was requested, what action was taken and any evidence confirming deletion.
+  </p>
+
+  <label>
+    <input type="radio" name="deletion-record" value="yes-with-evidence">
+    Yes, including evidence of the deletion action
+  </label>
+
+  <label>
+    <input type="radio" name="deletion-record" value="requests-only">
+    We record deletion requests, but do not keep deletion evidence
+  </label>
+
+  <label>
+    <input type="radio" name="deletion-record" value="no">
+    No
+  </label>
+
+  <label>
+    <input type="radio" name="deletion-record" value="never-received">
+    We have never received a deletion request
+  </label>
+
+  <label>
+    <input type="radio" name="deletion-record" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+
+
+<div class="assessment-question">
+  <h3>6. If a child or parent asks for their footage or data to be deleted, can your organisation identify and locate the relevant footage or data?</h3>
+
+  <p>
+    Think about recordings, clips, downloads, shared copies and other data that may relate to the child.
+  </p>
+
+  <label>
+    <input type="radio" name="locate-child-data" value="yes">
+    Yes
+  </label>
+
+  <label>
+    <input type="radio" name="locate-child-data" value="some">
+    For some footage or data, but not all
+  </label>
+
+  <label>
+    <input type="radio" name="locate-child-data" value="vendor">
+    We rely on the vendor or platform to locate it
+  </label>
+
+  <label>
+    <input type="radio" name="locate-child-data" value="no">
+    No
+  </label>
+
+  <label>
+    <input type="radio" name="locate-child-data" value="not-tested">
+    We have never tested this
+  </label>
+
+  <label>
+    <input type="radio" name="locate-child-data" value="unsure">
+    I'm not sure
+  </label>
+</div>
+
+
+
+
+
+</div>
+     
+    </section>
+  
+<section id="act-report">
+  <h2>ACT: Your assessment results</h2>
+  <p>This report brings together the findings from your organisation's answers.</p>
+  <p>Results reflect information you provided and have not been independently verified.</p>
+
+  <div id="act-report-content">
+  <div id="assessment-findings" class="assessment-findings" style="display: none;">
+    <h2>What AI Me found</h2>
+    <div id="consent-record-finding"></div>
+  </div>
+  <div id="deletion-record-finding" class="assessment-findings" style="display: none;"></div>
+<div id="locate-child-data-finding" class="assessment-findings" style="display: none;"></div>
+</div>
+
+<button type="button" onclick="window.print()">
+  Print / Save as PDF
+</button>
+
+</section>
+
+  </main>
+
+  <footer>
+    <p>AI Me does not score or rank vendors.</p>
+  </footer>
+
+<script src="assessment.js"></script>
+</body>
+</html>

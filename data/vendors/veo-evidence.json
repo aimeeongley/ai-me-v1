@@ -1,0 +1,63 @@
+{
+  "vendor": "Veo Technologies",
+  "platform": "Veo",
+  "methodologyVersion": "3.2",
+  "reviewStatus": "WORKING_RESEARCH_RECORD",
+  "lastReviewed": "2026-09-18",
+  "affectedPersons": [
+    "Child User",
+    "Child Club Participant",
+    "Child External Participant",
+    "Child Bystander"
+  ],
+ "evidence": [
+  {
+    "id": "VEO-001",
+    "domain": 9,
+    "domainName": "Child Users",
+    "question": "Can a child under 13 create or hold a Veo user account?",
+    "affectedPerson": "Child User",
+    "finding": "Veo's General Terms establish a minimum age of 13 for a user account.",
+    "evidenceStatus": "CONFIRMED",
+    "sourceId": "S1",
+    "sourceType": "Contractual / Legal",
+    "sourceDate": "2026-05-29",
+    "whyItMatters": "Account age restrictions determine who may use the platform directly, but do not establish whether younger children may be recorded or analysed as participants.",
+    "organisationAction": "No specific action identified for this finding.",
+    "monitoringTrigger": "Change to Veo General Terms or account age requirements"
+  },
+
+{
+  "id": "VEO-002",
+  "domain": 10,
+  "domainName": "Child Participants",
+  "question": "Can children be recorded without having a Veo account?",
+  "affectedPerson": "Child Club Participant, Child External Participant, Child Bystander",
+  "finding": "Veo's Data Processing Agreement identifies players, coaches, referees, spectators and users as separate categories of people whose data may be processed. Children can therefore appear in recordings without being Veo account holders.",
+  "evidenceStatus": "CONFIRMED",
+  "sourceId": "S3",
+  "sourceType": "Contractual / Legal",
+  "sourceDate": "2026-08-18",
+  "whyItMatters": "Account age restrictions do not establish protections for children who are recorded but do not use the platform.",
+  "organisationAction": "Identify how children in your club, opposition teams and bystanders are informed about recording and how objections are handled.",
+  "monitoringTrigger": "Changes to Veo's Data Processing Agreement or categories of people whose data is processed"
+},
+
+{
+  "id": "VEO-003",
+  "domain": 7,
+  "domainName": "AI Training and Product Development",
+  "question": "Can footage or data be used to develop AI?",
+  "affectedPerson": "Child User, Child Club Participant, Child External Participant, Child Bystander",
+  "finding": "Veo's reviewed Terms and Privacy Policy identify uses of content or data for developing, training, testing and improving products and AI systems. Its Data Processing Agreement separately describes restrictions on third-party AI model training for Coach Assist.",
+  "evidenceStatus": "SIGNIFICANT FINDING",
+  "sourceId": "S1",
+  "sourceType": "Contractual / Legal",
+  "sourceDate": "2026-05-29",
+  "whyItMatters": "Different AI uses may have different rules. The reviewed evidence does not fully establish how children's data is treated across these purposes.",
+  "organisationAction": "Ask Veo which uses apply to children's footage, whether an opt-out is available and what happens to derived data after deletion.",
+  "monitoringTrigger": "Changes to Veo's AI terms, privacy purposes or model providers"
+}
+
+]
+}
